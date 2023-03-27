@@ -15,8 +15,8 @@ Credentials of Completion: [Certificate Link](https://www.codehub.gr/wp-content/
 ## Stack
 | Resource | Technology |
 | ----------- | ----------- |
-| Database | <img src="https://www.postgresql.org/media/img/about/press/elephant.png" width="15" height="15"> Postgres |
-| Frontend Framework | <img src="https://img.icons8.com/color/512/java-coffee-cup-logo--v1.png" width="15" height="15"> Java |
+| CSS Framework | <img src="https://w7.pngwing.com/pngs/628/224/png-transparent-bootstrap-plain-wordmark-logo-icon.png" width="15" height="15"> Bootstrap |
+| Frontend Framework | <img src="https://angular.io/assets/images/logos/angularjs/AngularJS-Shield.svg" width="15" height="15"> AngularJS |
 
 ## Tools & Technologies
 - Version Control: Git
