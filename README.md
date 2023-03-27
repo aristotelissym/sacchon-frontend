@@ -1,4 +1,4 @@
-# sacchon-frontendend
+# sacchon-frontend
 
 ## Purpose
 This project was part of the final assignment of the **Pfizer x Code.Hub Software Engineering Bootcamp** that took place on September of 2020.
