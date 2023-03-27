@@ -1,0 +1,41 @@
+
+<div class=" content">
+  <div class=" row">
+    <div class=" col-lg-6 col-md-12">
+      <div class="card">
+        <div class=" card-header">
+          <h4 class=" card-title">Patient List</h4>
+        </div>
+        <div class=" card-body">
+          <div class=" table-responsive">
+            <table class=" table tablesorter" id="">
+              <thead class=" text-primary">
+                <tr class="d-flex">
+                  <th class="col-3">id</th>
+                  <th class="col-3">username</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let patient of patients" class="d-flex">
+                  <td class="col-3">{{patient.patientId}}</td>
+                  <td class="col-3">{{patient.username}}</td>
+                  <td class="col-3"><button 
+                      type="submit" class="btn btn-outline-primary pull-right" 
+                      routerLink="./{{patient.patientId}}/consultation/post">
+                      Consult</button>
+                  </td>
+                  <td class="col-3"><button 
+                      type="submit" 
+                      class="btn btn-outline-warning pull-right" 
+                      routerLink="../consultation">
+                      Patients Consults</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

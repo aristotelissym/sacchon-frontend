@@ -1,0 +1,19 @@
+<div class="container mr-5 mt-5">
+  <div class="card" style="width: 18rem;">
+    <article class="card-body">
+      <h4 class="card-title mb-4 mt-1">Insert a consultation</h4>
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label  class="font-weight-bold" for="advice">Consult: </label>
+          <textarea
+                  class="form-control"
+                  id="advice"
+                  placeholder="advice"
+                  formControlName="advice"></textarea>
+                <span class="text-danger" *ngIf="form.get('advice').errors?.required && form.get('advice').dirty">*This field is required</span>
+        </div>
+        <button class="btn btn-primary btn-lg btn-block" [disabled]="!form.valid" type="submit">Submit</button>
+      </form>
+    </article>
+  </div>
+</div>

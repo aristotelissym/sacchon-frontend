@@ -1,0 +1,40 @@
+
+<div class=" content col-lg-12 col-md-12">
+    <div class=" row">
+      <div class=" col-lg-6 col-md-12">
+        <div class="card mr-5 col-md-12">
+          <div class=" card-header">
+            <h4 class=" card-title">Patients Consultations</h4>
+          </div>
+          <div class=" card-body">
+            <div class=" table-responsive">
+              <table class=" table tablesorter" id="">
+                <thead class=" text-primary">
+                  <tr class="d-flex">
+                    <th class="col-3">patient id</th>
+                    <th class="col-3">advice</th>
+                    <th class="col-3">date Created</th>
+                    <th class="col-3">consultation id</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let pc of patientConsultation" class="d-flex">
+                    <td class="col-3">{{pc.patientId}}</td>
+                    <td class="col-3">{{pc.advice}}</td>
+                    <td class="col-3">{{pc.dateCreated | date:'dd-MM-yyyy'}}</td>
+                    <td class="col-3">{{pc.consultationId}}</td>
+                    <td class="col-3"><button 
+                      type="submit" class="btn btn-outline-warning pull-right" 
+                      routerLink="../patient/{{pc.patientId}}/consultation/{{pc.consultationId}}/edit">
+                      Edit Consult</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
